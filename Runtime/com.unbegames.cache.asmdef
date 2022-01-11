@@ -1,0 +1,19 @@
+{
+    "name": "com.unbegames.cache",
+    "rootNamespace": "Unbegames.Services",
+    "references": [
+        "Unity.Addressables",
+        "Unity.ResourceManager",
+        "com.unbegames.utilities",
+        "com.unbegames.datastore"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,17 @@
+{
+  "name": "com.unbegames.cache",
+  "version": "1.0.0",
+  "displayName": "Unbegames Cache",
+  "description": "A set of classes that help to manage preloaded game content",
+  "unity": "2020.1",
+  "dependencies": { },
+  "keywords": [
+    "cache"
+  ],
+  "author": {
+    "name": "unbeGames",
+    "email": "arugin@unbegames.com",
+    "url": "https://store.steampowered.com/publisher/unbegames"
+  },
+  "type": "library"
+}
