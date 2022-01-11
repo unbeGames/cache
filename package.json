@@ -4,7 +4,9 @@
   "displayName": "Unbegames Cache",
   "description": "A set of classes that help to manage preloaded game content",
   "unity": "2020.1",
-  "dependencies": { },
+  "dependencies": { 
+		"com.unity.addressables": "1.18.9"
+	},
   "keywords": [
     "cache"
   ],
