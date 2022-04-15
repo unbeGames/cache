@@ -1,12 +1,12 @@
 {
   "name": "com.unbegames.cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Unbegames Cache",
-  "description": "A set of classes that help to manage preloaded game content",
+  "description": "A set of classes that help to manage preloaded game content.",
   "unity": "2020.1",
-  "dependencies": { 
-		"com.unity.addressables": "1.18.9"
-	},
+  "dependencies": {
+    "com.unity.addressables": "1.18.9"
+  },
   "keywords": [
     "cache"
   ],

@@ -37,7 +37,23 @@ namespace Unbegames.Services {
 				Helpers.Error($"Can not instantiate asset with name {name}, status {handle.Status}");
 			} 
 
-			return result?.GetComponent<T>();
+			return result == null ? null : result.GetComponent<T>();
+		}
+
+		public async static Task<GameObject> InstantiateAsync(string name, Transform parent = null) {
+			var handle = Addressables.InstantiateAsync(name, parent, false);
+
+			await handle.Task;
+
+			GameObject result = null;
+
+			if (handle.Status == AsyncOperationStatus.Succeeded) {
+				result = handle.Result;
+			} else {
+				Helpers.Error($"Can not instantiate asset with name {name}, status {handle.Status}");
+			}
+
+			return result;
 		}
 
 		public static async Task<T> LoadAssetAsync<T>(string name) where T : Object {
