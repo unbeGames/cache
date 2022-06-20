@@ -34,6 +34,7 @@ namespace Unbegames.Services {
 		}
 
 		public static void Release() {
+			UnityEngine.Debug.Log("Cleaning CacheStore");
 			foreach (var pair in staticCaches) {
 				pair.Value.Release();
 			}
