@@ -24,5 +24,16 @@ namespace Unbegames.Services {
 			}
 			return vfx;
 		}
+		
+		public ParticleSystem GetParticlesInstance(string name, Transform parent) {
+			ParticleSystem particles = null;
+		      	var original = Get(name);
+		      	if (original != null) {
+				var go = GameObject.Instantiate(original, parent);
+				go.name = name;
+				particles = go.GetComponent<ParticleSystem>();
+		      	}
+		      	return particles;
+	    	}
 	}
 }
